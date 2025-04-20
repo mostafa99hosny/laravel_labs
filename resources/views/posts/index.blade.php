@@ -24,6 +24,7 @@
             <tr>
                 <th>ID</th>
                 <th>Title</th>
+                <th>Slug</th>
                 <th>Photo</th>
                 <th>Created By</th>
                 <th>Action</th>
@@ -32,6 +33,7 @@
                 <tr>
                     <td>{{ $post->id }}</td>
                     <td>{{ $post->title }}</td>
+                    <td>{{ $post->slug }}</td>
                     <td>
                         @if ($post->photo)
                            <img src="{{ asset('storage/' . $post->photo) }}" alt="Post Photo" style="max-width: 100px;">
